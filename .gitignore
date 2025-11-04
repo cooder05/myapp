@@ -1,4 +1,6 @@
+# -------------------------------------
 # Logs
+# -------------------------------------
 logs
 *.log
 npm-debug.log*
@@ -7,18 +9,63 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# -------------------------------------
+# Dependency directories
+# -------------------------------------
+node_modules/
+client/node_modules/
+server/node_modules/
 
-# Editor directories and files
+# -------------------------------------
+# Build outputs
+# -------------------------------------
+dist/
+dist-ssr/
+build/
+client/dist/
+server/dist/
+
+# -------------------------------------
+# Environment files (secrets)
+# -------------------------------------
+.env
+.env.local
+client/.env
+client/.env.local
+server/.env
+server/.env.local
+
+# -------------------------------------
+# Local / system files
+# -------------------------------------
+*.local
+.DS_Store
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# -------------------------------------
+# IDE / Editor directories
+# -------------------------------------
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+
+# -------------------------------------
+# Vite / ESLint caches
+# -------------------------------------
+.vite/
+.eslintcache
+client/.vite/
+client/.eslintcache
+
+# -------------------------------------
+# Optional logs / temp folders
+# -------------------------------------
+server/logs/
+client/logs/
